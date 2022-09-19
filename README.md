@@ -33,16 +33,16 @@ Note: {{url}} = localhost:4000/
 
 # Following fields are required for this api
 
-packageOneTitle
-packageOne
-packageOnePrice
-packageOneImageLimit
-packageTwoTitle
-packageTwo
-packageTwoPrice
-packageTwoImageLimit
-packageThreeTitle
-packageThree
-packageThreePrice
-packageThreeImageLimit
+packageOneTitle<br />
+packageOne<br />
+packageOnePrice<br />
+packageOneImageLimit<br />
+packageTwoTitle<br />
+packageTwo<br />
+packageTwoPrice<br />
+packageTwoImageLimit<br />
+packageThreeTitle<br />
+packageThree<br />
+packageThreePrice<br />
+packageThreeImageLimit<br />
 
