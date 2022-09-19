@@ -70,8 +70,7 @@ exports.addOrder = async (req, res, next) => {
     //   cardExpiryMonth = cardExpiryArr[0];
     //   cardExpiryYear = cardExpiryArr[1];
     // }
-    // let stripeKey =
-    //   "sk_test_51JrvHqDJQe8pXlZtGBtjPhRh1bF7K1T9Mjv9eoIx5m9zCJPAI8Fgpirziy3w1Ut7VQUqm5LtcJL1MJeNJ73Ru9GM007hoVHGWu";
+    // let stripeKey 
     let vendorId = await menuHelper.findVendorByMenuId(priceArr[0].item);
     // let vendorDetail = await userHelper.findUserById(vendorId);
     // let vendorName = vendorDetail.name;
@@ -284,8 +283,7 @@ exports.orderPayment = async (req, res, next) => {
       cardExpiryMonth = cardExpiryArr[0];
       cardExpiryYear = cardExpiryArr[1];
     }
-    let stripeKey =
-      "sk_test_51JrvHqDJQe8pXlZtGBtjPhRh1bF7K1T9Mjv9eoIx5m9zCJPAI8Fgpirziy3w1Ut7VQUqm5LtcJL1MJeNJ73Ru9GM007hoVHGWu";
+    let stripeKey = process.env.STRIPE_SECRET_KEY;
     let userDetail = await userHelper.findUserById(userId);
     let userEmail = userDetail.email;
     let userName = userDetail.name;
